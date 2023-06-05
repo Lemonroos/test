@@ -3,6 +3,7 @@ import {useState} from "react";
 export default function PlayersPresentation({ players }) {
     const [player, setPlayer] = useState([])
   //console.log(players);
+  //useState is used to change the sate of said player in the program
   return (
     <div className="container">
       {players.map((player) => (

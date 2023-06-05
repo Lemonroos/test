@@ -2,23 +2,25 @@
   background-color: #333;
   padding-left: 30px;
   overflow: hidden;
+  
 }
-.App nav ul {
+.App  ul {
+  
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.App nav li {
+  }
+.App li {
+  
   float: left;
 }
-.App nav a {
-  display: block;
+.App a {
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-.App nav a.active {
+.App  a.active {
   background-color: #808000;
 }
 nav a:hover {
@@ -117,4 +119,19 @@ button:hover {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+ a.switch-mode{
+  
+  width: 100%;
+  height: auto;
+}
+
+
+a.switch-mode {
+  position: relative;
+  
+  left: 1200px;
+  bottom: 40px;
+  width: 100%;
+  height: auto;
 }
