@@ -9,7 +9,7 @@ export class Main extends Component {
     };
   }
   render() {
-    return <PlayersPresentation players={this.state.players} />;
+    return <PlayersPresentation player={this.state.players} />;
   }
 }
 export default Main;

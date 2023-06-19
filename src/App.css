@@ -1,17 +1,12 @@
 .App nav {
   background-color: #333;
-  padding-left: 30px;
-  overflow: hidden;
-  
+  /* padding-left: 30px;
+  overflow: hidden; */
+  display: flex;
 }
-.App  ul {
-  
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  }
+
 .App li {
-  
+  list-style: none;
   float: left;
 }
 .App a {
@@ -20,11 +15,20 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-.App  a.active {
+.App a.active {
   background-color: #808000;
 }
 nav a:hover {
   background-color: #808000;
+}
+
+a.switch-mode {
+  float: right;
+  left: auto;
+}
+.switch-button {
+  float: right;
+  left: 50%;
 }
 
 .container {
@@ -89,7 +93,7 @@ button:hover {
 .popup {
   margin: 70px auto;
   padding: 5px;
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
   border-radius: 5px;
   width: 30%;
   position: relative;
@@ -120,18 +124,40 @@ button:hover {
   max-height: 30%;
   overflow: auto;
 }
- a.switch-mode{
+.badge {
+  background-color: #ff0000;
+  float: left;
+  font-size: 150%;
+  font-weight: bold;
+  color: #f5f5f5;
+  padding: 5px;
+}
+.product-card {
   
-  width: 100%;
-  height: auto;
+  background-color: #e6e6e6;
+  margin: auto;
+  width:80% ;
+  padding: 1%;
+  text-align: justify;
 }
 
+.product-tumb {
+  text-align: center;
+}
+.product-details {
+  background-color: #f5f5f5;
+  padding: 1%;
+}
 
-a.switch-mode {
-  position: relative;
-  
-  left: 1200px;
-  bottom: 40px;
-  width: 100%;
-  height: auto;
+.product-details h4 {
+  font-size: 150%;
+ 
+}
+.product-price {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 150%;
+}
+.product-bottom-details {
+  color: #9b9a9a;
 }

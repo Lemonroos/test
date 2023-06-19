@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { players } from "../shared/ListOfPlayers"
 
 export default function PlayersPresentation({ players }) {
     const [player, setPlayer] = useState([])

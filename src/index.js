@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from './components/ThemeContext';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "./components/ThemeContext";
+import { BrowserRouter } from "react-router-dom";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-    <App />
-    </ThemeProvider>
-    
+    {/* <ThemeProvider>
+    <App /> BAI 8 9 10 11
+    </ThemeProvider> */}
+    <BrowserRouter>
+      <ThemeProvider>
+            <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
